@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration:none;
+	list-style:none;
+}
+html,body{
+	position: relative;
+	z-index: 0;
+}
+.header{
+	height:70px;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#fff;
+	z-index:5;
+}
+.header .nav{
+	position:absolute;
+	left:230px;
+	top:23px;
+}
+.header .nav li{
+	float:left;
+	margin-right:28px;
+	font-family:"Microsoft YaHei UI light";
+}
+.header .nav a{
+	color:#000;
+	font-size:20px;
+}
+.header a:hover{
+	color:#42CDDB;
+}
+#logo{
+	width:135px;
+	height:36px;
+	background:url(../images/index-logo.png) no-repeat;
+	display:block;
+	left:35px;
+	top:20px;
+	position:absolute;
+}
+.reglog{
+	position:absolute;
+	right:100px;
+	top:20px;
+}
+.header .reglog li{
+	float:left;
+	margin-right:30px;
+	font-family:"Microsoft YaHei UI light";
+}
+#loginbtn,#registbtn,#logoutbtn{
+	border:solid 1px #989583;
+	padding:7px 20px;
+	border-radius:20px;
+}
+#loginbtn,#logoutbtn{
+	border:solid 1px #42CDDB;
+}
+#loginbtn a,#logoutbtn a{
+	color:#42CDDB;
+}
+#registbtn a:hover{
+	color:#989583;
+}
+#mask{
+	background-color: rgba(0,0,0,0.6);
+	width:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 10;
+}
+#login{
+	position: fixed;
+	left: 30%;
+	top: 30%;
+	z-index: 11;
+}
+.logincon{
+	width: 500px;
+	height: 280px;
+	background-color: #fff;
+	position: relative;
+}
+#close{
+	width: 30px;
+	height: 30px;
+	background: url(../images/close.png) no-repeat;
+	cursor:pointer;
+	position: absolute;
+	top:6px;
+	right:6px;
+}
+.regloghead{
+	width: 100%;
+	height: 50px;
+	background-color: #f2f2f2;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Microsoft YaHei UI light";
+	font-size:20px;
+	color: #333;
+}
+#login input{
+	display: block;
+	height: 25px;
+	width: 250px;
+	margin-left: 120px;
+	margin-top: 35px;
+	font-size: 15px;
+	line-height: 25px;
+	padding-left: 5px;
+}
+#flogin{
+	width:250px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "Microsoft YaHei UI light";
+	font-size:25px;
+	margin-left: 120px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #39c;
+	color:#fff;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+#fregist{
+	width:250px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "Microsoft YaHei UI light";
+	font-size:24px;
+	margin-left: 120px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #39c;
+	color:#fff;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+.warnning{
+	text-align: center;
+	font-size: 14px;
+	margin:10px auto;
+}

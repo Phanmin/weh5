@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+/*music*/
+.music{
+	width: 7vw;
+	height:7vw;
+	border:4px solid #ef1639;
+	position:fixed;
+	top:3vh;
+	right:4vw;
+	z-index: 5;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.music > img:first-of-type{
+	position: absolute;
+	top:24%;
+	right:2.5%;
+	width:28.412%;
+	z-index:6;
+}
+.music > img:last-of-type{
+	position:absolute;
+	width:79%;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	z-index:5;
+}
+.music > img.play{
+	-webkit-animation:play 3s linear infinite;
+	        animation:play 3s linear infinite;
+}
+@keyframes play{
+	0%{
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes play{
+	0%{
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+/*page bg*/
+.page{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

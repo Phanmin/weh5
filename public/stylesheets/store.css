@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f0f0f0;
+	width: 100%;
+	text-align: center;
+}
+.header{
+	height:60px;
+	width:100%;
+	background-color:#2B323C;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+#logo{
+	width:135px;
+	height:36px;
+	background:url(../images/index-logo-inverse.png) no-repeat;
+	display:block;
+	left:35px;
+	top:15px;
+	position:absolute;
+}
+.container{
+	text-align: left;
+	width:1000px;
+	margin:60px auto;
+}
+.item{
+	width:280px;
+	height:250px;
+	display: inline-block;
+	position: relative;
+	margin: 10px 20px;
+	border:1px solid #ddd;
+	box-shadow: 1px 1px 1px #f0f0f0,-1px -1px 1px #f0f0f0;
+	text-align: center;
+}
+.item:hover{
+	border:1px solid #eee;
+	box-shadow: 1px 1px 1px #bbb,-1px -1px 1px #bbb;
+}
+.cover{
+	width: 200px;
+	height: 200px;
+	background-image: url(../images/test.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.options{
+	width: 80px;
+	height: 199px;
+	position: absolute;
+	left: 200px;
+	top:0px;
+	border-bottom: 1px solid #ddd;
+}
+.opbtn{
+	width:50px;
+	height: 30px;
+	padding:10px 0;
+	line-height: 30px;
+	color:#2B323C;
+	background-color: #ccc;
+	border-radius: 25px;	
+	font-size: 14px;
+	margin:30px auto;
+	cursor: pointer;
+}
+.title{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	color:#666;
+	border-bottom: 1px solid #ddd;
+	position: absolute;
+	left: 0;
+	top: 200px;
+}
+.author{
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	color:#666;
+	position: absolute;
+	left: 0;
+	top: 226px;
+}
+.addmore{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f0f0f0;
+	border:1px solid #ccc;
+	cursor: pointer;
+}
+#qrcode{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}

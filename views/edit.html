@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>WE-H5</title>
+<link rel="stylesheet" href="/stylesheets/edit.css">
+<link rel="stylesheet" href="/stylesheets/animate.css">
+</head>
+
+<body>
+<div class="header">
+<a href="/"><span id="logo"></span></a>
+<ul>
+<li id="text"><div class="icon icon1"></div>文本</li>
+<li id="picture"><div class="icon icon2"></div>图片</li>
+<li id="background"><div class="icon icon3"></div>背景</li>
+<li id="music"><div class="icon icon4"></div>音乐</li>
+<li id="grid"><div class="icon icon7"></div>栅格</li>
+<li id="save"><div class="icon icon5"></div>保存</li>
+<li id="preview"><div class="icon icon6"></div>预览</li>
+</ul>
+<ul class="useroption">
+	<li id="backmyh5">我的H5</li>
+	<li id="logout">退出账号：xx</li>
+</ul>
+</div>
+<div class="pagelist">
+	<div class="pldiv">标题和封面</div>
+	<div class="pldiv pageli">页面列表</div>
+	<div class="pldiv pageadd" id="pageadd"> + 添加新页</div>
+	<div class="pldivcontent" id="pldivcontent"></div>
+</div>
+<div class="phone_con">
+<div class="phone_title">title</div>
+<div class="phone_screen grid_bg"></div>
+<div class="phone_choice"><ul>
+	<li id="cancelbg"><div class="icon icon8"></div></li>
+	<li id="cancelmusic"><div class="icon icon9"></div></li>
+</ul></div>
+</div>
+<div class="editchoices">
+	<div><ul class="outlook"><li>样式</li><li>动画</li></ul></div>
+	<div id="textedit">
+	<div class="anititle">文本样式</div></br>
+		<span class="edtitle">字体颜色</span><span class="color-preview" style="background-color: #1a1a1a;"></span><input id="font-color" type="text" value="#1a1a1a"></br>
+		<span class="edtitle">字体大小</span><input id="font-size1" type="range" min="0" max="50" step="1" value="14"><input id="font-size2" type="number" min="0" max="50" step="1" value="14"></br>
+		<span class="edtitle">透明度</span><input id="opacity1" type="range" min="0" max="1" step="0.1" value="1"><input id="opacity2" type="number" min="0" max="1" step="0.1" value="1"></br>
+		<span class="edtitle">行高</span><input id="line-height1" type="range" min="0" max="20" step="0.5" value="1.5"><input id="line-height2" type="number" min="0" max="20" step="0.5" value="1.5"></br>
+		<span class="edtitle">文本内容</span><input id="text-content" type="text" value="文本"></br>
+	<div class="anititle">边框样式</div></br>
+	<span class="edtitle">背景颜色</span><span class="color-preview"></span><input id="bg-color" type="text" value="rgba(0,0,0,0)"></br>
+	<span class="edtitle">内边距</span><input id="padding1" type="range" min="0" max="50" step="1" value="5"><input id="padding2" type="number" min="0" max="50" step="1" value="5"></br>
+	<span class="edtitle">宽度</span><input id="width1" type="range" min="0" max="320" step="1" value="50"><input id="width12" type="number" min="0" max="320" step="1" value="50"></br>
+	<span class="edtitle">高度</span><input id="height1" type="range" min="0" max="486" step="1" value="50"><input id="height2" type="number" min="0" max="486" step="1" value="50"></br>
+	<span class="edtitle">层级</span><input id="zindex1" type="range" min="0" max="500" step="1" value="1"><input id="zindex2" type="number" min="0" max="500" step="1" value="1"></br>
+	</div>
+	<div id="picedit">
+	<div class="anititle">基础样式</div></br>
+	<span class="edtitle">宽度</span><input id="picwidth1" type="range" min="0" max="320" step="1" value="50"><input id="picwidth2" type="number" min="0" max="320" step="1" value="100"></br>
+	<span class="edtitle">高度</span><input id="picheight1" type="range" min="0" max="486" step="1" value="50"><input id="picheight2" type="number" min="0" max="486" step="1" value="100"></br>
+	<span class="edtitle">透明度</span><input id="opacity3" type="range" min="0" max="1" step="0.1" value="1"><input id="opacity4" type="number" min="0" max="1" step="0.1" value="1"></br>
+	<span class="edtitle">层级</span><input id="zindex3" type="range" min="0" max="500" step="1" value="1"><input id="zindex4" type="number" min="0" max="500" step="1" value="1"></br>
+	</div>
+	<div id="aniedit"><ul id="animations"></ul><div id="addani">+ 添加动画</div></div>
+</div>
+<div class="picmanage">
+	<div class="picmantitle">我的图片素材库</div>
+	<img id="picclose" src="/images/close.png">
+	<div class="picarea"></div>
+	<a href="javascript:;" class="a-upload"><input name="files" id="uploadpic" type="file" accept="image/gif,image/jpeg,image/png,image/jpg">点击上传图片</a>
+</div>
+<div class="musicmanage">
+	<div class="picmantitle">我的音乐素材库</div>
+	<img id="picclose2" src="/images/close.png">
+	<div class="musicarea"></div>
+	<a href="javascript:;" class="a-upload"><input name="file" id="uploadmusic" type="file" accept="audio/mpeg">点击上传音乐</a>
+</div>
+<div class="mask"></div>
+<div id="delemenu">删除</div>
+<div id="success">操作成功</div>
+<div id="qrcode"></div>
+<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="/javascripts/edit.minjs"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+module.exports={
+	user:{
+		name:{type:String,required:true},
+		password:{type:String,required:true}
+	},
+	work:{
+		owner:{type:String,required:true},
+		ownername:{type:String,required:true},
+		page:{type:Number,default:1},
+		content:{type:String,default:'[{"background":"/images/test.png","content":""}]'},
+		title:{type:String,default:'title'},
+		cover:{type:String,default:'/images/test.png'},
+		music:{type:String,default:''},
+		draf:{type:Number,default:1},
+		hit:{type:Number,default:0}
+	},
+	pictureLib:{
+		owner:{type:String,required:true},
+		urlname:{type:String,required:true}
+	},
+	musicLib:{
+		owner:{type:String,required:true},
+		filename:{type:String,required:true},
+		urlname:{type:String,required:true}
+	}
+};
